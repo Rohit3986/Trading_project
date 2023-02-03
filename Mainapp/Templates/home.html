@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trading Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .uploader {
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px #ddd;
+            padding: 15px;
+            margin: 15px auto;
+        }
+        
+        .uploader__input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px #ddd;
+        }
+        
+        .uploader__btn {
+            background: #00b4ef;
+            color: #fff;
+            font-size: 1rem;
+            padding: 8px 10px;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 50%;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="uploader">
+        <h1>Trading Project</h1>
+        <form method="POST" action="/" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="c" class="form-label">Upload CSV</label>
+                <input type="file" class="form-control" name="csv" id="c">
+            </div>
+            <div class="mb-3">
+                <label for="tf" class="form-label">TimeFrame</label>
+                <input id="tf" name="tf" type="text" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <a href="{{file.url}}" download>download json file
+    </div>
+</body>
