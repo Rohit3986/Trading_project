@@ -1,3 +1,5 @@
 TASK is completed 90% only downloading part reamin
 csv files are storing in file uploads
 json files are storing in json_files
+for demostration i have used 10 minutes timeframe and the given csv file 
+so you can see in file.json all the record of 10 mins interval have been added
