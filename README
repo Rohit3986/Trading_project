@@ -1,4 +1,4 @@
-TASK is completed 90% only downloading part reamin
+TASK is completed 100% now just a small issue first add new data (csv and timeframe) then click on download otherwise old data will be downloaded
 csv files are storing in file uploads
 json files are storing in json_files
 for demostration i have used 10 minutes timeframe and the given csv file 
